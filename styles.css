@@ -1,0 +1,158 @@
+body, h1, h4, p {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 400;
+  }
+
+#grid-container {
+    display: flex;
+    }
+
+  h1{
+    text-align:center;
+    color: #d8f3dc;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 100%;
+    color: #CCCC;
+  }
+
+  #content {
+    flex: 0 0 40%;
+    margin: 5px;
+    padding: 10px;
+    width: 1000px;
+    height: 800px;
+    border: 1px ;
+  }
+
+  #content_map2 {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    width: 1000px;
+    height: 800px;
+    border: 1px ; 
+  }
+  
+  #map {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+  } 
+  
+  #map2 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+  } 
+
+  p {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .sphere{
+    fill: #a8dadc;
+  }
+
+  .country{
+      fill: none;
+      stroke : black;
+      stroke-opacity: 0.2;
+      stroke-linejoin: round;
+
+  }
+  
+  #play-button {
+    position: absolute;
+    top: 720px;
+    left: 70px;
+    background: #ff9c1a;
+    padding-right: 26px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: 0 12px;
+    width: 60px;
+    cursor: pointer;
+    height: 30px;
+  }
+
+  #play-button:hover {
+    background-color: #696969;
+  } 
+
+  #play-button2 {
+    position: absolute;
+    top: 720px;
+    left: 1070px;
+    background: #ff9c1a;
+    padding-right: 26px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: 0 12px;
+    width: 60px;
+    cursor: pointer;
+    height: 30px;
+  }
+
+  #play-button2:hover {
+    background-color: #696969;
+  } 
+  .ticks {
+    font-size: 10px;
+  }
+
+  .track,
+  .track-inset,
+  .track-overlay {
+    stroke-linecap: round;
+  }
+
+  .track {
+    stroke: #ffff;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+  }
+
+  .track-inset {
+    stroke: #dcdcdc;
+    stroke-width: 8px;
+  }
+
+  .track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+  }
+
+  .handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+  }
+
+  input {
+    display: block;
+    width: 200px;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  #legend text {
+    font-size: 0.7em;
+    color: white;
+    font-weight: 400;
+    background-color: white;
+  }  
+  
+  .wide {
+    width: 140px;
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</body>
+
+</html>
+
+<html>
+
+<head>
+
+    <title>DataViz</title>
+
+    <meta charset="UTF-8">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <meta name="author" content="Magda">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-time.v2.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v3.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+</head>
+
+<body>
+
+    <div id="grid-container">
+
+        <div id="content">
+            <h1 style= "color: #fcd5ce">Covid-19 Map Data Across the Globe</h1>
+            <h4>BEURRIER Elsa, CHAMOT Magdalena, FERREIRA Quentin, GOJON Lucas</h4>
+            <p style="color:#F5F5F5;">Map showing the incidence rate, per 100 000 inhabitants, of new covid cases &#128567 per country and per month, from January 2020 to May 2021.</p>
+            <h5 style="color: #edf2fb">Click the button Play | Drag the slider</h5>
+            <div id="map"></div>
+            <div class="slider"></div>
+             <div id="vis">
+                <button id="play-button">Play</button>
+             </div>
+        </div>
+
+        <div id="content_map2">
+            <h1>Covid-19 Vaccines Map Data Across the Globe</h1>
+            <h4>BEURRIER Elsa, CHAMOT Magdalena, FERREIRA Quentin, GOJON Lucas</h4>
+            <p style="color:#F5F5F5;">Map showing the incidence rate, per 100 000 inhabitants, of people getting vaccinated &#128137 per country and per month, from January 2020 to
+                May 2021.</p>
+            <h5 style="color: #edf2fb">Click the button Play | Don't drag the slider !!</h5>
+            <div id="map2"></div>
+            <div class="slider2"></div>
+            <div id="vis2">
+                <button id="play-button2">Play</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="text_descrp">
+        <br>
+        <p style="color: #edf2fb">In case something goes wrong or a button stops working, just refresh the page. &#128521</p>
+        <br>
+        <br>
+        <h1 style="color:#3cfd0c;">&#129440 The Story Telling &#129440</h1>
+        <h3 style="color:#F5F5F5;">&#129489&#8205&#128188 The aim of this datavizualization is to compare the evolution of the pandemic of COVID-19 in the world. <br>
+            The maps show the proportion &#128201 of vaccination &#128137 on the number of coronavirus new cases in the world. <br>
+            Thus, you should be able to interprate &#128373&#65039 if vaccination helps to decrease the number of daily infections around the word.
+        </h3>
+        <p style="color:#F5F5F5;"> PS. The vaccination started a bit late, so be patient to see some color on the map. &#x1F9D8 </p>
+        <br>
+        <i style="color:#F5F5F5">Data were taken from: Ritchie H. et al., « Coronavirus Pandemic (COVID-19) », Our World in Data,2020/05/26. Available at: <a href="https://ourworldindata.org/coronavirus/country/egypt">https://ourworldindata.org/coronavirus/country/egypt</a> </i>
+    </div>
+
+
+    <footer class="text-center text-lg-start bg-light text-muted navbar-fixed-bottom pt-5 pb-5">
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); height: 30px;">
+            © 2021 Copyright: MagdalenaCoding
+        </div>
+    </footer>
+    <script>
+        console.log("Created by Magda")
+    </script>
+    <script src="script.js"></script>
+    <script src="script_vaccin.js"></script>
+
+
+
+</body>
+
+</html>
